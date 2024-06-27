@@ -14,7 +14,7 @@
     <style>
         svg { color: #000; }
         @media (prefers-color-scheme: dark) {
-            svg { color: #FFF; }
+            svg { color: #FFFF00; }
         }
     </style>
     </svg
