@@ -3,6 +3,7 @@ import GitHub from "./icons/GitHub.astro"
 import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
+import Player from "./icons/Player.astro"
 import LinkButton from "./LinkButton.astro"
 
 const TAGS = {
@@ -17,22 +18,26 @@ const TAGS = {
     icon: Tailwind,
   },
 }
+
 const PROJECTS = [
 {
     title: "WoodWork - Conecta espacios de coworking con profesionales",
     description:
       "Plataforma que busca conectar a trabajadores independientes, emprendedores y pequeñas empresas con espacios de coworking disponibles.",
-    link: "https://woodwork-one.vercel.app/" /* Poner mejor en lugar de link, el video demo */,
+    /* link: "https://woodwork-one.vercel.app/", */
+    demo: "https://youtu.be/Ez0-VTziXIk",
     github: "https://github.com/MatiasNicolasAcevedo/s15-17-t-java-angular",
     image: "../public/projects/woodwork.webp",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Aware Gaming - Plataforma de juego responsable y consciente",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
+      "Plataforma de juegos de casino. Destinado a ayudar a personas que enfrentan dificultades con el juego y las apuestas.",
+    /* link: "https://aware-gaming.web.app/", */
+    demo: "https://youtu.be/3QSkQjY1r84",
+    github: "https://github.com/MatiasNicolasAcevedo/s14-18-t-java",
+    image: "../public/projects/aware-gaming.webp",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
 ]
@@ -40,7 +45,7 @@ const PROJECTS = [
 
 <div class="flex flex-col gap-y-16">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    PROJECTS.map(({ image, title, description, tags, link, demo, github }) => (
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
@@ -79,6 +84,12 @@ const PROJECTS = [
             <LinkButton href={link}>
               <Link class="size-4" />
               Preview
+            </LinkButton>
+          )}
+          {demo && (
+            <LinkButton href={demo}>
+              <Player class="size-4" />
+              Demo
             </LinkButton>
           )}
         </footer>
