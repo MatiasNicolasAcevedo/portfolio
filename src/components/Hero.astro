@@ -1,0 +1,65 @@
+---
+const personalImageAlt = "Matias Nicolas Acevedo";
+import Badge from "@/components/Badge.astro";
+import LinkedInIcon from "@/components/icons/LinkedIn.astro";
+import MailIcon from "@/components/icons/Mail.astro";
+import SocialPill from "@/components/SocialPill.astro";
+import GitHub from "./icons/GitHub.astro";
+import Download from "./icons/Download.astro";
+---
+
+<div class="max-w-2xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="/matias-photo.png"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://www.linkedin.com/in/matias-nicolas-acevedo/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hola, soy Matias
+  </h1>
+  <p
+    class="mt-6 text-pretty text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    +1 año de experiencia.
+    <strong>Desarrollador Full-Stack.</strong><span
+      class="text-red-200/90 font-semibold"
+    >
+      Backend Java y Frontend React.</span
+    >
+    <strong>Team Lead.</strong> 
+    <span
+      class="text-lime-300 font-semibold"
+    >MVP Builder.</span><br>
+    De Córdoba, Argentina.
+  </p>
+  <nav class="flex flex-wrap gap-3 mt-8 justify-start">
+    <SocialPill href="mailto:matias.nicolas.acevedo@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/matias-nicolas-acevedo/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/MatiasNicolasAcevedo">
+      <GitHub class="size-4" />
+      GitHub
+    </SocialPill>
+    <SocialPill href="https://drive.google.com/uc?export=download&id=1HlnDb7VNckWBvK9LN-j3PZpDgEQszWya">
+      <Download class="size-4" />
+      Descargar CV
+    </SocialPill>
+  </nav>
+</div>

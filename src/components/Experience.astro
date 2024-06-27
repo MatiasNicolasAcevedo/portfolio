@@ -1,30 +1,27 @@
 ---
-import ExperienceItem from "./ExperienceItem.astro";
-
-const EXPERIENCE = [
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
   {
-    date: "Noviembre 2023 - Actualmente",
+    date: "Actualmente - 2023",
     title: "Backend, Team Lead, Frontend",
     company: "No Country",
-    description:
-      "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
-    link: "https://twitch.tv/midudev",
+    description: "Desarrollé aplicaciones web utilizando Java, Spring Boot, React y TypeScript, implementando APIs RESTful seguras y eficientes con Spring Security y JWT. Manejé bases de datos relacionales y gestioné despliegues con Docker. Optimicé procesos de despliegue, realicé pruebas unitarias e integración con JUnit. Generé documentación de la API y coordiné equipos bajo metodologías ágiles. Además, llevé a cabo revisiones de código, mentoricé a desarrolladores y me encargué del diseño y maquetación de interfaces de usuario responsivas.",
+    link: "https://www.nocountry.tech/talent-marketplace", /* Cambiar por mi link del PROOFS */
   },
   {
     date: "2022 - 2012",
     title: "Comerciante, Vendedor, Atención al Cliente, Emprendedor",
-    company: "Comercios, Local al Público",
-    description:
-      "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+    company: "Comercios Varios",
+    description: "Operé y gestioné comercios como verdulería, almacén y resto-bar con venta de menús y delivery. En el negocio de almacén y verdulería, me encargaba de la venta, compra y reposición de mercadería, así como de la coordinación y gerencia en general. Administré y gestioné el bar, organizando los turnos y la logística de repartos, coordinando empleados y equipos de trabajo en la cocina y el salón, además de encargarme del inventario, el stock y el cierre de caja. Además, brindé atención al cliente en diversos roles, incluyendo operador de call-center, venta de préstamos personales, gestiones de cobranzas personalizadas y venta de planes de ahorro de autos.",
   },
 ]
 ---
 
-<ol class="relative border-s border-gray-200 ml-3">
+<ol class="relative mt-16">
   {
-    EXPERIENCE.map(experience => (
-      <li class="mb-10 ms-4">
-        <ExperienceItem { ...experience } />
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
       </li>
     ))
   }
