@@ -5,6 +5,10 @@ import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import Player from "./icons/Player.astro"
 import LinkButton from "./LinkButton.astro"
+import Spring from "./icons/Spring.astro"
+import React from "./icons/React.astro"
+import TypeScript from "./icons/TypeScript.astro"
+import JWT from "./icons/JWT.astro"
 
 const TAGS = {
   NEXT: {
@@ -17,6 +21,26 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  SPRING: {
+    name: "Spring Boot",
+    class: "bg-[#004a00] text-white",
+    icon: Spring,
+  },
+  REACT: {
+    name: "React JS",
+    class: "bg-[#003159] text-white",
+    icon: React,
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class: "bg-[#006752] text-white",
+    icon: TypeScript,
+  },
+    JWT: {
+    name: "JWT",
+    class: "bg-[#313937] text-white",
+    icon: JWT,
+  },
 }
 
 const PROJECTS = [
@@ -28,7 +52,7 @@ const PROJECTS = [
     demo: "https://youtu.be/Ez0-VTziXIk",
     github: "https://github.com/MatiasNicolasAcevedo/s15-17-t-java-angular",
     image: "../public/projects/woodwork.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.SPRING, TAGS.JWT],
   },
   {
     title: "Aware Gaming - Plataforma de juego responsable y consciente",
@@ -38,7 +62,7 @@ const PROJECTS = [
     demo: "https://youtu.be/3QSkQjY1r84",
     github: "https://github.com/MatiasNicolasAcevedo/s14-18-t-java",
     image: "../public/projects/aware-gaming.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.SPRING, TAGS.JWT],
   },
   {
     title: "Ecopay - La Billetera Virtual Ecológica",
@@ -48,7 +72,7 @@ const PROJECTS = [
     demo: "https://youtu.be/6adbtEd6JE0",
     github: "https://github.com/MatiasNicolasAcevedo/s13-21-ft-java",
     image: "../public/projects/ecopay.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.SPRING, TAGS.JWT],
   },
   {
     title: "Airbnb Clone - Plataforma de juego responsable y consciente",
@@ -58,7 +82,7 @@ const PROJECTS = [
     demo: "https://youtu.be/30RxYVl8nh8",
     github: "https://github.com/MatiasNicolasAcevedo/c15-33-ft-java-react",
     image: "../public/projects/clon-airbnb.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.SPRING, TAGS.JWT],
   },
 ]
 ---
